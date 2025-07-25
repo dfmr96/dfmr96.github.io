@@ -1,80 +1,415 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>David Marcano – Game Developer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      padding: 40px 20px;
-      font-family: 'Rubik', sans-serif;
-      background: #f8f9fa;
-      color: #212529;
-      max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      color: #007BFF;
-    }
-
-    h2 {
-      margin-top: 2rem;
-      color: #343a40;
-    }
-
-    p {
-      font-size: 1.1rem;
-    }
-
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    li {
-      margin: 0.5rem 0;
-    }
-
-    a {
-      color: #007BFF;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .footer {
-      margin-top: 4rem;
-      font-size: 0.8rem;
-      color: #6c757d;
-      text-align: center;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Marcano - Game Developer</title>
+    <meta name="description" content="Professional game developer with 3+ years of experience in Unity and Unreal Engine. Specialized in gameplay programming, AI, and mobile game development.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">DM</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
-  <h1>🍔 David Marcano</h1>
-  <p>Hi! I’m a game developer and creator of <strong>Burger Rush</strong>, a fast-paced arcade cooking game for mobile.</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">David Marcano</span>
+                </h1>
+                <h2 class="hero-subtitle">Game Developer</h2>
+                <p class="hero-description">
+                    With 3+ years of experience creating immersive gameplay for PC and mobile using Unity. 
+                    Passionate about crafting engaging game experiences and optimizing performance.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://linkedin.com/in/davidmarcano" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/davidmarcano" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://behance.net/davidmarcano" target="_blank" class="social-link">
+                        <i class="fab fa-behance"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-games-showcase">
+                    <div class="central-hub">
+                        <div class="hub-icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <span class="hub-text">Games</span>
+                    </div>
+                    
+                    <div class="game-orbit game-1">
+                        <div class="game-card" data-game="burger-rush">
+                            <img src="img/burger-rush.jpeg" alt="Burger Rush" class="orbit-game-img">
+                            <div class="game-label">Burger Rush</div>
+                        </div>
+                    </div>
+                    
+                    <div class="game-orbit game-2">
+                        <div class="game-card" data-game="unreal-manor">
+                            <img src="img/unreal-manor.png.jpeg" alt="Unreal Manor" class="orbit-game-img">
+                            <div class="game-label">Unreal Manor</div>
+                        </div>
+                    </div>
+                    
+                    <div class="game-orbit game-3">
+                        <div class="game-card" data-game="monster-survival">
+                            <img src="img/monster_survival.png" alt="Monster Survival" class="orbit-game-img">
+                            <div class="game-label">Monster Survival</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <h2>🔗 Quick Links</h2>
-  <ul>
-    <li>📄 <a href="https://dfmr96.github.io/burgerrush-delete">Account Deletion Info</a></li>
-    <li>🧾 <a href="https://dfmr96.github.io/app-ads.txt">app-ads.txt</a></li>
-    <li>🔐 <a href="https://unity.com/legal/privacy-policy" target="_blank">Privacy Policy (Unity)</a></li>
-    <li>🎮 <a href="https://dfmr96.itch.io/burger-rush" target="_blank">Play Burger Rush on Itch.io</a></li>
-  </ul>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a passionate game developer based in Buenos Aires, Argentina, with over 3 years of experience 
+                        in creating engaging and immersive gaming experiences. I specialize in Unity development and have 
+                        worked on various projects ranging from mobile arcade games to survival horror experiences.
+                    </p>
+                    <p>
+                        Currently pursuing my Bachelor's degree in Game Development at Universidad Argentina de la Empresa, 
+                        I combine academic knowledge with practical industry experience. I'm dedicated to continuous learning 
+                        and staying up-to-date with the latest game development technologies and methodologies.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-trophy"></i>
+                            <span>3+ Years Experience</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-download"></i>
+                            <span>2000+ Game Downloads</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-users"></i>
+                            <span>Team Leadership</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <p>📬 For support or questions, email me at <a href="mailto:dfmr96.dev@gmail.com">dfmr96.dev@gmail.com</a></p>
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Junior Unity Developer</h3>
+                            <span class="company">Mega Cat Studios</span>
+                            <span class="period">August 2022 - October 2022</span>
+                            <span class="location">Remote</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="project">Project: WrestleQuest</p>
+                            <ul>
+                                <li>Implemented and optimized cinematic and dialogue systems using Unity Events</li>
+                                <li>Developed an efficient collision detection system for accurate and smooth gameplay</li>
+                                <li>Conducted rigorous QA testing to ensure robust and bug-free player experience</li>
+                                <li>Collaborated with cross-functional teams to deliver milestones on schedule</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <div class="footer">
-    &copy; 2025 David Marcano – All rights reserved.
-  </div>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Personal Projects</h2>
+            <div class="projects-grid">
+                <!-- Burger Rush -->
+                <div class="project-card" data-project="burger-rush">
+                    <div class="project-image">
+                        <img src="img/burger-rush.jpeg" alt="Burger Rush Game Screenshot" class="project-img">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://play.google.com/store/apps/details?id=com.davemarcano.burgerrush" class="project-link" target="_blank">
+                                    <i class="fab fa-google-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Burger Rush</h3>
+                        <p class="project-year">2025</p>
+                        <p class="project-description">
+                            Arcade-style mobile game inspired by Overcooked. Released on Google Play Store with 
+                            integrated monetization and persistent stat tracking.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Unity 2D</span>
+                            <span class="tech-tag">Analytics</span>
+                            <span class="tech-tag">Cloud Save</span>
+                            <span class="tech-tag">IAP</span>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Unreal Manor -->
+                <div class="project-card" data-project="unreal-manor">
+                    <div class="project-image">
+                        <img src="img/unreal-manor.png.jpeg" alt="Unreal Manor Game Screenshot" class="project-img">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://dfmr96.itch.io/unreal-manor" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Unreal Manor</h3>
+                        <p class="project-year">2024</p>
+                        <p class="project-description">
+                            Led a 3-member team in developing a first-person survival horror game. 
+                            Implemented core inventory and puzzle mechanics for immersive gameplay.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Unreal Engine 5.3</span>
+                            <span class="tech-tag">Blueprints</span>
+                            <span class="tech-tag">Team Lead</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Monster Survival -->
+                <div class="project-card" data-project="monster-survival">
+                    <div class="project-image">
+                        <img src="img/monster_survival.png" alt="Monster Survival Game Screenshot" class="project-img">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://dfmr96.itch.io/monster-survival" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Monster Survival</h3>
+                        <p class="project-year">2022</p>
+                        <p class="project-description">
+                            2D inverse bullet hell roguelite that achieved 2,000+ downloads on Google Play Store 
+                            before discontinuation. Managed design, coding, and deployment end-to-end.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Unity</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">Google Play Services</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-cogs"></i>
+                        Game Engines
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Unity</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Unreal Engine</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-code"></i>
+                        Programming Languages
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">C#</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">C++</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Blueprints</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-gamepad"></i>
+                        Specialties
+                    </h3>
+                    <div class="specialty-tags">
+                        <span class="specialty-tag">Gameplay Programming</span>
+                        <span class="specialty-tag">AI</span>
+                        <span class="specialty-tag">Cinematics</span>
+                        <span class="specialty-tag">UI/UX for Games</span>
+                        <span class="specialty-tag">Design Patterns</span>
+                        <span class="specialty-tag">Optimization</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-tools"></i>
+                        Tools & Technologies
+                    </h3>
+                    <div class="specialty-tags">
+                        <span class="specialty-tag">Git</span>
+                        <span class="specialty-tag">Blender</span>
+                        <span class="specialty-tag">Google Play Services</span>
+                        <span class="specialty-tag">Ads/IAP Integration</span>
+                        <span class="specialty-tag">Agile</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p class="contact-description">
+                        I'm always interested in new opportunities and exciting projects. 
+                        Whether you're looking for a game developer or want to collaborate, 
+                        let's connect!
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span id="email-display">Click to reveal email</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+54 9 11 2580 3697</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Buenos Aires, Argentina</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 David Marcano. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/davidmarcano" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/davidmarcano" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://behance.net/davidmarcano" target="_blank" class="social-link">
+                        <i class="fab fa-behance"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-</html>
+</html> 
