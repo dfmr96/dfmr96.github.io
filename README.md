@@ -8,7 +8,7 @@ A modern, responsive portfolio website showcasing David Marcano's game developme
 - **Modern UI**: Clean, professional design with smooth animations and transitions
 - **Dark Theme**: Game developer-focused dark color scheme
 - **Interactive Elements**: Smooth scrolling navigation, hover effects, orbital hero showcase with clickable games, and dynamic content
-- **Project Showcase**: Highlighting personal projects with actual game screenshots including Burger Rush, Unreal Manor, and Monster Survival
+- **Project Showcase**: Highlighting both professional work (WrestleQuest with Steam store link + live gameplay stacked vertically) and personal projects with actual game screenshots including Burger Rush, Unreal Manor, and Monster Survival
 - **Skills Visualization**: Animated skill bars and categorized technical competencies
 - **Contact Form**: Fully functional contact form with EmailJS integration that sends real emails
 - **Social Links**: Integration with LinkedIn, GitHub, and Behance profiles
@@ -16,10 +16,10 @@ A modern, responsive portfolio website showcasing David Marcano's game developme
 ## Sections
 
 1. **Hero Section**: Introduction with name, title, orbital game showcase with all 3 projects visible, and call-to-action buttons
-2. **About**: Personal background and key achievements
-3. **Experience**: Professional work history at Mega Cat Studios
+2. **About**: Personal background, key achievements, and pixel art portrait
+3. **Professional Experience**: Featured showcase with stacked project images - clickable WrestleQuest project linking to Steam store and live gameplay screenshots
 4. **Projects**: Showcase of personal game development projects
-5. **Skills**: Technical skills organized by category (Engines, Languages, Specialties, Tools)
+5. **Skills**: Technical skills organized by category (Engines, Languages, Specialties & Tools)
 6. **Contact**: Contact information and form for inquiries
 
 ## Technologies Used
@@ -40,8 +40,13 @@ david-website/
 ├── script.js           # JavaScript functionality
 ├── img/                # Project images and assets
 │   ├── burger-rush.jpeg
+│   ├── david_pixelart.png
 │   ├── unreal-manor.png.jpeg
-│   └── monster_survival.png
+│   ├── monster_survival.png
+│   ├── megacat.jpg
+│   ├── WrestleQuest.jpg
+│   ├── WrestleQuest_gameplay.jpg
+│   └── WrestleQuest_portrait.jpg
 └── README.md           # Project documentation
 ```
 
